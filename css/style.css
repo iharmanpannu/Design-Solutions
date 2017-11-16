@@ -52,7 +52,7 @@ body, html {
   body .d a, html .d a {
     border-bottom: 1px solid #ff5c5c; }
   body .video-img, html .video-img {
-    margin-bottom: 5em; }
+    margin: 5em 0; }
     body .video-img img, html .video-img img {
       max-width: 100%; }
   body .services, html .services {
