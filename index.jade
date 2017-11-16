@@ -10,7 +10,7 @@ html
 
   body
     header.hero_header
-      .wrapper
+      .container
         nav.nav_links
           a( id="logo" href="#")
             i.fa.fa-code(aria-hidden='true')  Design
@@ -30,26 +30,27 @@ html
               a(href='#') Contact Us
 
     section.main_content
-      header
+      header.container
         h1 Solutions By Design
         .header_content
           .main_heading
-            p.sub_heading We build deep v beard keffiyeh celiac pork belly biodiesel.
+            p.sub_heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere excepturi i non voluptas.We build deep v beard keffiyeh celiac pork belly biodiesel.
             .solutions
+          .right  
             p#sub_paragraph Helping our partners move forward through
-          ul#taglist
-            li
-              a(href='#') Discovery & Strategy
-            li
-              a(href='#') Branding
-            li
-              a(href='#') Interactive
-            li
-              a(href='#') Communications
-            li
-              a(href='#') Creative Production
-            li
-              a(href='#') Development Solutions
+            ul#taglist
+              li
+                a(href='#') Discovery & Strategy
+              li
+                a(href='#') Branding
+              li
+                a(href='#') Interactive
+              li
+                a(href='#') Communications
+              li
+                a(href='#') Creative Production
+              li
+                a(href='#') Development Solutions
     section.img-wrapper
       .a
         img(src='img/udacity.jpg')
@@ -60,25 +61,25 @@ html
       .d
         a 
           | See More    
-    section.about-mid.container
-      div
-        header
-          h3 Let’s Build Something Great.
-            | Together.
-      div
-        p
-          | Nos autem opportuna, creatrix Studio de fundatur fsdfsd, ddsdfsd. Sit amet porttitor elit tristique de nostra bona et fdsfsdfs consuetudinem singulari consilio instituta solutiones. Consilio incepto repulsi accedere non lacessere intentio processus renuntiare
-          | identitatis experientiis creare,. Nos nituntur ad opus, quae penitus ipsam actio et generat results. Tu quaeris habere maiorem impulsum? Adiuvare nos youd 'amo.
-        br
-        hr
-        div.services
-          ul
-            li
-              a(href='#') Our Services
-            li
-              a(href='#') Read Our Story
-            li
-              a(href='#') Contact Us
+    section.container
+      header
+        h3 Let’s Build Something Great.
+          | Together.
+        .midflex  
+          div
+            p
+              | Nos autem opportuna, creatrix Studio de fundatur fsdfsd, ddsdfsd. Sit amet porttitor elit tristique de nostra bona et fdsfsdfs consuetudinem singulari consilio instituta solutiones. Consilio incepto repulsi accedere non lacessere intentio processus renuntiare
+              | identitatis experientiis creare,. Nos nituntur ad opus, quae penitus ipsam actio et generat results. Tu quaeris habere maiorem impulsum? Adiuvare nos youd 'amo.
+            br
+            hr
+          div.services
+            ul
+              li
+                a(href='#') Our Services
+              li
+                a(href='#') Read Our Story
+              li
+                a(href='#') Contact Us
     .video-img
       img(src="/img/video.png" alt="video png")
     section.container
@@ -115,7 +116,7 @@ html
         img(src='img/brands/Stitch.png', alt='Stitch')
         img(src='img/brands/storybots.svg', alt='StoryBots')
         img(src='img/brands/Weebly.png', alt='Weebly')
-    section
+    section.container
       .articles
         .left
           .first_article

@@ -52,8 +52,6 @@ body, html {
   body #logo, html #logo {
     color: #ededed;
     font-family: "Oswald", sans-serif; }
-  body .container, html .container {
-    margin: 0 1em; }
   body .d a, html .d a {
     border-bottom: 1px solid #ff5c5c; }
   body .video-img, html .video-img {
@@ -281,6 +279,9 @@ body, html {
     margin: 3rem 0; } }
 
 @media (min-width: 769px) {
+  .container {
+    width: 80%;
+    margin: auto; }
   hr {
     display: none; }
   .hero_header .nav_links {
@@ -291,8 +292,11 @@ body, html {
     .hero_header .nav_links ul {
       margin-right: 10px; }
       .hero_header .nav_links ul li {
-        padding: 1em;
+        margin-left: 10px;
         display: inline-block; }
+        .hero_header .nav_links ul li:hover {
+          border-bottom: 1px solid rgba(237, 237, 237, 0.45);
+          color: rgba(237, 237, 237, 0.45); }
         .hero_header .nav_links ul li a {
           color: #2e3c40;
           border: none;
@@ -307,11 +311,26 @@ body, html {
         font-size: 0.75; }
   .main_content .header_content {
     display: flex;
-    flex-flow: row; }
+    flex-flow: row;
+    justify-content: space-between; }
   .main_content h1 {
     font-size: 5rem;
-    margin: 4.5rem 0 4.5rem .5em;
+    margin: 4.5rem 0;
     text-transform: uppercase; }
+  .main_content .main_heading {
+    width: 40%;
+    justify-self: flex-start; }
+  .main_content .right {
+    width: 50%;
+    justify-self: flex-end; }
+  .main_content #taglist {
+    margin: 2rem 0; }
+    .main_content #taglist li {
+      margin: 0; }
+  .midflex {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; }
   .img-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

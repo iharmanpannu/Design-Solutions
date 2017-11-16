@@ -58,8 +58,6 @@ body,html
     color: $c-light-white
     font-family: $font-stack-oswald
 
-  .container
-    margin: 0 1em
   .d
     a
       border-bottom: 1px solid $c-orange-red
@@ -312,6 +310,9 @@ body,html
 
 
 @media (min-width: 769px)
+  .container
+    width: 80%
+    margin: auto
   hr
     display: none
   // heading styles
@@ -325,8 +326,11 @@ body,html
       ul
         margin-right: 10px
         li
-          padding: 1em
+          margin-left: 10px
           display: inline-block
+          &:hover
+            border-bottom: 1px solid $c-white-hover
+            color: $c-white-hover
           a
            color: $c-grey-color
            border: none
@@ -340,16 +344,37 @@ body,html
         i
           font-size: 0.75
 
+  // Content after header_content
 
   .main_content
+    // .container
+    //   width: 90%
+    //   margin: auto
     .header_content
       display: flex
       flex-flow: row
+      justify-content: space-between
+      // align-items: stretch
     h1
       font-size: 5rem
-      margin: 4.5rem 0 4.5rem .5em
+      margin: 4.5rem 0
       text-transform: uppercase
+    .main_heading
+      width: 40%
+      justify-self: flex-start
+    .right
+      width: 50%
+      justify-self: flex-end
+    #taglist
+      margin: 2rem 0
+      li
+        margin: 0
+  // Mid Content
 
+  .midflex
+    display: inline-flex
+    justify-content: space-between
+    align-items: center
 
   .img-wrapper
     display: grid
