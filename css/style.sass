@@ -31,6 +31,10 @@ body,html
     text-decoration: none
     font-family: serif
     color: $c-orange-red
+    &:hover
+      color: $c-orange-hover
+      border-bottom: 1px solid $c-orange-hover
+
 
   #taglist
     display: flex
@@ -161,8 +165,7 @@ body,html
        &:hover
          color: $c-white-hover
          border-bottom: 1px solid $c-white-hover
-
-// For mobile only
+    // For mobile only
 
 @media screen and (max-width: 420px)
   .gallery
@@ -207,27 +210,29 @@ body,html
 // Tablet and mobile
 
 @media screen and (max-width: 768px)
+
+  .fixedPosition
+    position: fixed
   #logo
     display: none
   .burger-nav
     display: block
     height: 40px
-    width: 10%
+    width: 100%
     background:
+      color: $c-orange-red
       image: url("/img/burgernav.svg")
       repeat: no-repeat
-      position: 98%
+      position: 90%
     cursor: pointer
-    position: relative
-
-  // Navigation styles end here
-
   .nav_links
     width: 100%
+    // position: fixed
+    overflow: hidden
   .nav_links ul
     overflow: hidden
-    position: relative
-    width: 100%
+    position: fixed
+    width: 100vw
     background: $c-orange-red
     height: 0
     flex-direction: column
@@ -235,20 +240,22 @@ body,html
       text-align: center
       width: 100%
       margin: 0
+      border-bottom: 1px solid rgba(#444,.1)
+      &:last-of-type
+        border: none
       a
         text-transform: uppercase
         font-weight: 100
         font-size: 1.25em
         color: $c-light-white
         padding: 1em 0
-        border-bottom: 1px solid rgba(#444,.1)
         display: block
         margin: 0
         &:hover
           color: rgba(#585858,.3)
   .nav_links ul.open
     height: 100%
-
+    position: absolute
   // Artciles styles
   .main_content
     margin: auto
@@ -332,6 +339,18 @@ body,html
         font-family: $font-stack-oswald
         i
           font-size: 0.75
+
+
+  .main_content
+    .header_content
+      display: flex
+      flex-flow: row
+    h1
+      font-size: 5rem
+      margin: 4.5rem 0 4.5rem .5em
+      text-transform: uppercase
+
+
   .img-wrapper
     display: grid
     grid-template-columns: repeat(4, 1fr)
