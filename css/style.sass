@@ -31,6 +31,10 @@ body,html
     text-decoration: none
     font-family: serif
     color: $c-orange-red
+    &:hover
+      color: $c-white-hover
+      border-bottom: 1px solid $c-white-hover
+
   #taglist
     display: flex
     flex-wrap: wrap
@@ -301,9 +305,6 @@ body,html
        font-size: 1em
        text-transform: uppercase
        border: none
-       &:hover
-         color: $c-white-hover
-         border-bottom: 1px solid $c-white-hover
 
 @media (min-width: 769px)
   hr
