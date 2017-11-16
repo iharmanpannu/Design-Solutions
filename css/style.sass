@@ -54,9 +54,6 @@ body,html
     font-size: 2rem
     border-bottom: 1px solid $c-orange-red
     line-height: 2.375rem
-  #logo
-    color: $c-light-white
-    font-family: $font-stack-oswald
 
   .d
     a
@@ -128,8 +125,7 @@ body,html
       height: 300px
       animation: footerOut .5s linear 0s
       &:hover
-        animation: footerHover .5s linear 0s
-        animation-fill-mode: both
+        animation: footerHover .5s linear 0s both
       @keyframes footerHover
         from
           border-left: 0px solid white
@@ -218,14 +214,12 @@ body,html
     height: 40px
     width: 100%
     background:
-      color: $c-orange-red
       image: url("/img/burgernav.svg")
       repeat: no-repeat
       position: 90%
     cursor: pointer
   .nav_links
     width: 100%
-    // position: fixed
     overflow: hidden
   .nav_links ul
     overflow: hidden
@@ -237,7 +231,6 @@ body,html
     li
       text-align: center
       width: 100%
-      margin: 0
       border-bottom: 1px solid rgba(#444,.1)
       &:last-of-type
         border: none
@@ -309,7 +302,7 @@ body,html
     margin: 3rem 0
 
 
-@media (min-width: 769px)
+@media screen and (min-width: 769px)
   .container
     width: 80%
     margin: auto
@@ -318,6 +311,8 @@ body,html
   // heading styles
   .hero_header
     .nav_links
+      position: fixed
+      overflow: hidden
       display: inline-flex
       // background: $c-grey-color
       width: 100%
@@ -328,28 +323,42 @@ body,html
         li
           margin-left: 10px
           display: inline-block
-          &:hover
-            border-bottom: 1px solid $c-white-hover
-            color: $c-white-hover
+
           a
            color: $c-grey-color
            border: none
            font-size: 0.75rem
            text-transform: uppercase
-      #logo
-        color: $c-grey-color
-        margin-left: 10px
-        text-transform: uppercase
-        font-family: $font-stack-oswald
-        i
-          font-size: 0.75
-
+           animation: navHoverIn .2s linear both
+           &:hover
+             border-bottom: 1px solid $c-grey-hover
+             color: $c-grey-hover
+             animation: navHoverOut .2s linear both
+    @keyframes navHoverOut
+      0%
+        border-bottom: 0px solid $c-grey-hover
+        // font-size: 0.75rem
+      100%
+        border-bottom: 2px solid $c-grey-hover
+        // font-size: 1.15rem
+    @keyframes navHoverIn
+      0%
+        border-bottom: 2px solid $c-grey-hover
+        // font-size: 1.15rem
+      100%
+        border-bottom: 0px solid $c-grey-hover
+        // font-size: 0.75rem
+  #logo
+    font-size: .75rem
+    color: $c-orange-light
+    margin-left: 10px
+    text-transform: uppercase
+    font-family: $font-stack-oswald
+    &:hover
+      border: none
   // Content after header_content
 
   .main_content
-    // .container
-    //   width: 90%
-    //   margin: auto
     .header_content
       display: flex
       flex-flow: row
@@ -357,7 +366,7 @@ body,html
       // align-items: stretch
     h1
       font-size: 5rem
-      margin: 4.5rem 0
+      padding: 7rem 0
       text-transform: uppercase
     .main_heading
       width: 40%
@@ -369,14 +378,9 @@ body,html
       margin: 2rem 0
       li
         margin: 0
-  // Mid Content
-
-  .midflex
-    display: inline-flex
-    justify-content: space-between
-    align-items: center
 
   .img-wrapper
+    padding: 4.5rem 0
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-template-rows: repeat(4, 1fr)
@@ -399,6 +403,22 @@ body,html
   .d
     grid-area: d
 
+
+  // Mid Content
+  .midsection
+    margin: 4.5rem 0
+    h3
+      font-size: 2.9rem
+  .midflex
+    display: flex
+    text-align: left
+    .left
+      width: 60%
+
+    .right
+      width: 30%
+      margin: 0 auto
+
   .gallery
     margin: 5rem auto
 
@@ -414,3 +434,11 @@ body,html
       padding: 2em 0
       align-self: center
       justify-self: center
+
+  .articles
+    h3
+      font-size: 3rem
+    .right
+      border-left: 1px solid $c-orange-red
+    .first_article,.second_article
+      margin: 4rem

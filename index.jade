@@ -10,9 +10,9 @@ html
 
   body
     header.hero_header
-      .container
+      .nav_container
         nav.nav_links
-          a( id="logo" href="#")
+          a(id="logo" href="#")
             i.fa.fa-code(aria-hidden='true')  Design
           a.burger-nav
           ul
@@ -62,17 +62,17 @@ html
         a 
           | See More    
     section.container
-      header
+      header.midsection
         h3 Let’s Build Something Great.
           | Together.
         .midflex  
-          div
+          .left
             p
               | Nos autem opportuna, creatrix Studio de fundatur fsdfsd, ddsdfsd. Sit amet porttitor elit tristique de nostra bona et fdsfsdfs consuetudinem singulari consilio instituta solutiones. Consilio incepto repulsi accedere non lacessere intentio processus renuntiare
               | identitatis experientiis creare,. Nos nituntur ad opus, quae penitus ipsam actio et generat results. Tu quaeris habere maiorem impulsum? Adiuvare nos youd 'amo.
             br
             hr
-          div.services
+          .right
             ul
               li
                 a(href='#') Our Services
@@ -83,21 +83,22 @@ html
     .video-img
       img(src="/img/video.png" alt="video png")
     section.container
-      div
-        div
-          h3 From the Inside Out.
-          p
-            | fsddsf quasdfds et culturae nostrae est fueled per passionem duobus modis: quia aut si quid est ad populum in hoc faciemus, et erimus in populum a latere operatur. Ad capere Pt post siparium factum est cor nostrum turba et qui faciunt fdsfs dsf.
-        br
-        hr      
-        div
-          ul
-            li
-              a(href='#') Our Digest
-            li
-              a(href='#') Our Standards
-            li
-              a(href='#') Meet Our Team
+      header.midsection
+        h3 From the Inside Out.
+        .midflex 
+          .left
+            p
+              | fsddsf quasdfds et culturae nostrae est fueled per passionem duobus modis: quia aut si quid est ad populum in hoc faciemus, et erimus in populum a latere operatur. Ad capere Pt post siparium factum est cor nostrum turba et qui faciunt fdsfs dsf.
+          br
+          hr      
+          .right
+            ul
+              li
+                a(href='#') Our Digest
+              li
+                a(href='#') Our Standards
+              li
+                a(href='#') Meet Our Team
     section.gallery
       .partners_imgs
         img(src='img/brands/invision.svg', alt='InVision')
@@ -116,8 +117,8 @@ html
         img(src='img/brands/Stitch.png', alt='Stitch')
         img(src='img/brands/storybots.svg', alt='StoryBots')
         img(src='img/brands/Weebly.png', alt='Weebly')
-    section.container
-      .articles
+    section.articles
+      .midflex
         .left
           .first_article
             a(href='#')
@@ -133,20 +134,22 @@ html
 
     footer
       .social
-        h1 Social
-        ul
-          li
-            a(href='https://dribbble.com/iharmanpannu')
-              i.fa.fa-dribbble(aria-hidden='true')  Dribbble
-          li
-            a(href="https://github.com/iharmanpannu")
-              i.fa.fa-github(aria-hidden='true')  Github
-          li
-            a(href="https://www.facebook.com/iharpannu")
-              i.fa.fa-facebook-square(aria-hidden='true')  facebook
-          li
-            a(href="https://twitter.com/iharmanpannu")
-              i.fa.fa-twitter(aria-hidden='true')  twitter
+        .left
+          h1 Social
+        .right
+          ul
+            li
+              a(href='https://dribbble.com/iharmanpannu')
+                i.fa.fa-dribbble(aria-hidden='true')  Dribbble
+            li
+              a(href="https://github.com/iharmanpannu")
+                i.fa.fa-github(aria-hidden='true')  Github
+            li
+              a(href="https://www.facebook.com/iharpannu")
+                i.fa.fa-facebook-square(aria-hidden='true')  facebook
+            li
+              a(href="https://twitter.com/iharmanpannu")
+                i.fa.fa-twitter(aria-hidden='true')  twitter
 
       script(src='http://code.jquery.com/jquery-1.11.3.min.js')
       script(src='js/main.js')

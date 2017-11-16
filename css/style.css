@@ -49,9 +49,6 @@ body, html {
     font-size: 2rem;
     border-bottom: 1px solid #ff5c5c;
     line-height: 2.375rem; }
-  body #logo, html #logo {
-    color: #ededed;
-    font-family: "Oswald", sans-serif; }
   body .d a, html .d a {
     border-bottom: 1px solid #ff5c5c; }
   body .video-img, html .video-img {
@@ -116,8 +113,7 @@ body, html {
     height: 300px;
     animation: footerOut .5s linear 0s; }
     body footer .social:hover, html footer .social:hover {
-      animation: footerHover .5s linear 0s;
-      animation-fill-mode: both; }
+      animation: footerHover .5s linear 0s both; }
 
 @keyframes footerHover {
   from {
@@ -193,7 +189,6 @@ body, html {
     display: block;
     height: 40px;
     width: 100%;
-    background-color: #ff5c5c;
     background-image: url("/img/burgernav.svg");
     background-repeat: no-repeat;
     background-position: 90%;
@@ -211,7 +206,6 @@ body, html {
     .nav_links ul li {
       text-align: center;
       width: 100%;
-      margin: 0;
       border-bottom: 1px solid rgba(68, 68, 68, 0.1); }
       .nav_links ul li:last-of-type {
         border: none; }
@@ -278,13 +272,15 @@ body, html {
     border: none;
     margin: 3rem 0; } }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .container {
     width: 80%;
     margin: auto; }
   hr {
     display: none; }
   .hero_header .nav_links {
+    position: fixed;
+    overflow: hidden;
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
@@ -294,28 +290,41 @@ body, html {
       .hero_header .nav_links ul li {
         margin-left: 10px;
         display: inline-block; }
-        .hero_header .nav_links ul li:hover {
-          border-bottom: 1px solid rgba(237, 237, 237, 0.45);
-          color: rgba(237, 237, 237, 0.45); }
         .hero_header .nav_links ul li a {
           color: #2e3c40;
           border: none;
           font-size: 0.75rem;
-          text-transform: uppercase; }
-    .hero_header .nav_links #logo {
-      color: #2e3c40;
-      margin-left: 10px;
-      text-transform: uppercase;
-      font-family: "Oswald", sans-serif; }
-      .hero_header .nav_links #logo i {
-        font-size: 0.75; }
+          text-transform: uppercase;
+          animation: navHoverIn .2s linear both; }
+          .hero_header .nav_links ul li a:hover {
+            border-bottom: 1px solid rgba(88, 88, 88, 0.5);
+            color: rgba(88, 88, 88, 0.5);
+            animation: navHoverOut .2s linear both; }
+  @keyframes navHoverOut {
+    0% {
+      border-bottom: 0px solid rgba(88, 88, 88, 0.5); }
+    100% {
+      border-bottom: 2px solid rgba(88, 88, 88, 0.5); } }
+  @keyframes navHoverIn {
+    0% {
+      border-bottom: 2px solid rgba(88, 88, 88, 0.5); }
+    100% {
+      border-bottom: 0px solid rgba(88, 88, 88, 0.5); } }
+  #logo {
+    font-size: .75rem;
+    color: rgba(255, 92, 92, 0.8);
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif; }
+    #logo:hover {
+      border: none; }
   .main_content .header_content {
     display: flex;
     flex-flow: row;
     justify-content: space-between; }
   .main_content h1 {
     font-size: 5rem;
-    margin: 4.5rem 0;
+    padding: 7rem 0;
     text-transform: uppercase; }
   .main_content .main_heading {
     width: 40%;
@@ -327,11 +336,8 @@ body, html {
     margin: 2rem 0; }
     .main_content #taglist li {
       margin: 0; }
-  .midflex {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center; }
   .img-wrapper {
+    padding: 4.5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -353,6 +359,18 @@ body, html {
     grid-area: c; }
   .d {
     grid-area: d; }
+  .midsection {
+    margin: 4.5rem 0; }
+    .midsection h3 {
+      font-size: 2.9rem; }
+  .midflex {
+    display: flex;
+    text-align: left; }
+    .midflex .left {
+      width: 60%; }
+    .midflex .right {
+      width: 30%;
+      margin: 0 auto; }
   .gallery {
     margin: 5rem auto; }
     .gallery .partners_imgs {
@@ -366,4 +384,10 @@ body, html {
       width: 80%;
       padding: 2em 0;
       align-self: center;
-      justify-self: center; } }
+      justify-self: center; }
+  .articles h3 {
+    font-size: 3rem; }
+  .articles .right {
+    border-left: 1px solid #ff5c5c; }
+  .articles .first_article, .articles .second_article {
+    margin: 4rem; } }
