@@ -22,6 +22,29 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/style.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/font-awesome\/css\/font-awesome.css": {
 		"aP": 1,
 		"bl": 0,
