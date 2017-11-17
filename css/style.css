@@ -225,23 +225,23 @@ html {
     background-repeat: no-repeat;
     background-position: 90%;
     cursor: pointer; }
-  .nav_links {
+  .nav-links {
     width: 100%;
     overflow: hidden; }
-  .nav_links ul {
+  .nav-links ul {
     overflow: hidden;
     position: fixed;
     width: 100vw;
     background: #ff5c5c;
     height: 0;
     flex-direction: column; }
-    .nav_links ul li {
+    .nav-links ul li {
       text-align: center;
       width: 100%;
       border-bottom: 1px solid rgba(68, 68, 68, 0.1); }
-      .nav_links ul li:last-of-type {
+      .nav-links ul li:last-of-type {
         border: none; }
-      .nav_links ul li a {
+      .nav-links ul li a {
         text-transform: uppercase;
         font-weight: 100;
         font-size: 1.25em;
@@ -249,9 +249,9 @@ html {
         padding: 1em 0;
         display: block;
         margin: 0; }
-        .nav_links ul li a:hover {
+        .nav-links ul li a:hover {
           color: rgba(88, 88, 88, 0.3); }
-  .nav_links ul.open {
+  .nav-links ul.open {
     height: 100%;
     position: absolute; }
   .main-content {
@@ -310,25 +310,25 @@ html {
     margin: auto; }
   hr {
     display: none; }
-  .hero_header .nav_links {
+  .hero_header .nav-links {
     position: fixed;
     overflow: hidden;
     display: inline-flex;
     width: 100%;
     justify-content: space-between;
     align-items: center; }
-    .hero_header .nav_links ul {
+    .hero_header .nav-links ul {
       margin-right: 10px; }
-      .hero_header .nav_links ul li {
+      .hero_header .nav-links ul li {
         margin-left: 10px;
         display: inline-block; }
-        .hero_header .nav_links ul li a {
+        .hero_header .nav-links ul li a {
           color: #2e3c40;
           border: none;
           font-size: 0.75rem;
           text-transform: uppercase;
           animation: navHoverIn .2s linear both; }
-          .hero_header .nav_links ul li a:hover {
+          .hero_header .nav-links ul li a:hover {
             border-bottom: 1px solid rgba(88, 88, 88, 0.5);
             color: rgba(88, 88, 88, 0.5);
             animation: navHoverOut .2s linear both; }
