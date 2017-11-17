@@ -189,7 +189,7 @@ body, html {
     display: block;
     height: 40px;
     width: 100%;
-    background-image: url("/img/burgernav.svg");
+    background-image: url("/img/code.svg");
     background-repeat: no-repeat;
     background-position: 90%;
     cursor: pointer; }
