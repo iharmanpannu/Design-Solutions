@@ -80,41 +80,37 @@ html {
     html li a {
       border-bottom: 1px solid #ff5c5c;
       font-size: 2rem; }
-  body .articles p,
-  html .articles p {
-    font-size: 1rem; }
-  body .articles h4,
-  html .articles h4 {
-    font-size: 1rem; }
-  body .articles .left,
-  html .articles .left {
-    border-top: 1px solid #ff5c5c;
-    width: 100vw;
-    padding: 2rem 1rem; }
-  body .articles .right,
-  html .articles .right {
-    border-top: 1px solid #ff5c5c;
-    width: 100vw;
-    padding: 2rem 1rem; }
+    body li h4,
+    html li h4 {
+      font-size: 1rem; }
+    body li .left,
+    html li .left {
+      border-top: 1px solid #ff5c5c;
+      padding: 2rem 1rem;
+      width: 100vw; }
+    body li .right,
+    html li .right {
+      border-top: 1px solid #ff5c5c;
+      padding: 2rem 1rem;
+      width: 100vw; }
   body .articles h3,
   html .articles h3 {
-    margin-bottom: 2rem;
-    color: #2e3c40; }
+    color: #2e3c40;
+    margin-bottom: 2rem; }
   body .articles p,
   html .articles p {
+    font-size: 1rem;
     text-transform: uppercase;
     color: #585858; }
   body .articles h4,
   html .articles h4 {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif; }
-  body .articles .first_article, body .articles .second_article,
-  html .articles .first_article,
-  html .articles .second_article {
-    animation: hoverOut .5s linear 0s; }
-  body .articles .first_article:hover, body .articles .second_article:hover,
-  html .articles .first_article:hover,
-  html .articles .second_article:hover {
+  body .articles .first-article,
+  body .articles .second-article,
+  html .articles .first-article,
+  html .articles .second-article {
+    animation: hoverOut .5s linear 0s;
     transform: translateX(1px);
     animation-name: hover;
     animation-duration: .5s;
@@ -426,5 +422,5 @@ html {
     font-size: 3rem; }
   .articles .right {
     border-left: 1px solid #ff5c5c; }
-  .articles .first_article, .articles .second_article {
+  .articles .first-article, .articles .second-article {
     margin: 4rem; } }
