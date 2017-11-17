@@ -99,27 +99,26 @@ html {
     margin-bottom: 2rem; }
   body .articles p,
   html .articles p {
+    color: #585858;
     font-size: 1rem;
-    text-transform: uppercase;
-    color: #585858; }
+    text-transform: uppercase; }
   body .articles h4,
   html .articles h4 {
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif; }
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
   body .articles .first-article,
   body .articles .second-article,
   html .articles .first-article,
   html .articles .second-article {
-    animation: hoverOut .5s linear 0s;
-    transform: translateX(1px);
-    animation-name: hover;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in; }
+    animation: hoverOut .5s linear 0s; }
+  body .articles:hover,
+  html .articles:hover {
+    animation: hover .5s ease-in forwards;
+    transform: translateX(1px); }
 
 @keyframes hover {
   0% {
-    transform: translateX(0px); }
+    transform: translateX(0); }
   100% {
     transform: translateX(5px); } }
 

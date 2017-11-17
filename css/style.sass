@@ -100,35 +100,36 @@ html
       margin-bottom: 2rem
 
     p
+      color: $c-light-grey
       font-size: 1rem
       text-transform: uppercase
-      color: $c-light-grey
 
     h4
-      text-transform: uppercase
       font-family: $font-stack-oswald
+      text-transform: uppercase
 
     .first-article,
     .second-article
       animation: hoverOut .5s linear 0s
-      
-      &:hover
+
+    &:hover
+      animation: hover .5s ease-in forwards
       transform: translateX(1px)
-      animation-name: hover
-      animation-duration: .5s
-      animation-fill-mode: forwards
-      animation-timing-function: ease-in
+
     @keyframes hover
       0%
-        transform: translateX(0px)
+        transform: translateX(0)
+
       100%
         transform: translateX(5px)
     @keyframes hoverOut
       0%
         transform: translateX(5px)
+
       100%
         transform: translateX(0px)
-  // Footer Styles
+
+   // Footer Styles
   footer
     .social
       background: $c-orange-red
