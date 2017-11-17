@@ -126,7 +126,7 @@ html {
   0% {
     transform: translateX(5px); }
   100% {
-    transform: translateX(0px); } }
+    transform: translateX(0); } }
   body footer .social,
   html footer .social {
     background: #ff5c5c;
