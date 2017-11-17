@@ -132,35 +132,35 @@ html
 
   footer
     .social
+      align-items: center
+      animation: footerOut .5s linear 0s
       background: $c-orange-red
       display: flex
       flex-flow: column
       flex-wrap: wrap
-      justify-content: center
-      align-items: center
       height: 300px
-      animation: footerOut .5s linear 0s
+      justify-content: center
+
       &:hover
         animation: footerHover .5s linear 0s both
       @keyframes footerHover
         from
-          border-left: 0px solid white
-          border-right: 0px solid white
-          // border-bottom: 0px solid white
+          border-left: 0 solid $c-light-grey
+          border-right: 0 solid $c-light-grey
+
         to
-          border-left: 10px solid white
-          border-right: 10px solid white
-          // border-bottom: 10px solid white
-        // background: $c-orange-light
+          border-left: 10px solid $c-light-grey
+          border-right: 10px solid $c-light-grey
+
       @keyframes footerOut
         from
-          border-left: 10px solid white
-          border-right: 10px solid white
-          // border-bottom: 10px solid white
+          border-left: 10px solid $c-light-grey
+          border-right: 10px solid $c-light-grey
+
         to
-          border-left: 0px solid white
-          border-right: 0px solid white
-          // border-bottom: 0px solid white
+          border-left: 0 solid $c-light-grey
+          border-right: 0 solid $c-light-grey
+
       h1
         color: $c-light-white
         font-family: $font-stack-oswald
@@ -197,7 +197,7 @@ html
 
 @media screen and (min-width:421px)and (max-width: 768px)
 
-  .main_content
+  .main-content
     padding-top: 5rem
     .main_heading
       h1
@@ -221,23 +221,28 @@ html
 
 @media screen and (max-width: 768px)
   .container
-    width: 90%
     margin: auto
-  .fixedPosition
+    width: 90%
+
+  .fixed-position
     position: fixed
+
   #logo
     display: none
+
   .burger-nav
     display: block
     height: 40px
     width: 100%
-    background-image: url("/img/code.svg")
+    background-image: url("img/code.svg")
     background-repeat: no-repeat
     background-position: 90%
     cursor: pointer
+
   .nav_links
     width: 100%
     overflow: hidden
+
   .nav_links ul
     overflow: hidden
     position: fixed
@@ -265,7 +270,7 @@ html
     height: 100%
     position: absolute
   // Artciles styles
-  .main_content
+  .main-content
     margin: auto
     h1
       padding: 4.5rem 0
@@ -353,17 +358,17 @@ html
     @keyframes navHoverOut
       0%
         border-bottom: 0px solid $c-grey-hover
-        // font-size: 0.75rem
+
       100%
         border-bottom: 2px solid $c-grey-hover
-        // font-size: 1.15rem
+
     @keyframes navHoverIn
       0%
         border-bottom: 2px solid $c-grey-hover
-        // font-size: 1.15rem
+
       100%
         border-bottom: 0px solid $c-grey-hover
-        // font-size: 0.75rem
+
   #logo
     font-size: .75rem
     color: $c-orange-light
@@ -374,7 +379,7 @@ html
       border: none
   // Content after header_content
 
-  .main_content
+  .main-content
     .header_content
       display: flex
       flex-flow: row

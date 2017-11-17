@@ -129,33 +129,33 @@ html {
     transform: translateX(0); } }
   body footer .social,
   html footer .social {
+    align-items: center;
+    animation: footerOut .5s linear 0s;
     background: #ff5c5c;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     height: 300px;
-    animation: footerOut .5s linear 0s; }
+    justify-content: center; }
     body footer .social:hover,
     html footer .social:hover {
       animation: footerHover .5s linear 0s both; }
 
 @keyframes footerHover {
   from {
-    border-left: 0px solid white;
-    border-right: 0px solid white; }
+    border-left: 0 solid #585858;
+    border-right: 0 solid #585858; }
   to {
-    border-left: 10px solid white;
-    border-right: 10px solid white; } }
+    border-left: 10px solid #585858;
+    border-right: 10px solid #585858; } }
 
 @keyframes footerOut {
   from {
-    border-left: 10px solid white;
-    border-right: 10px solid white; }
+    border-left: 10px solid #585858;
+    border-right: 10px solid #585858; }
   to {
-    border-left: 0px solid white;
-    border-right: 0px solid white; } }
+    border-left: 0 solid #585858;
+    border-right: 0 solid #585858; } }
     body footer .social h1,
     html footer .social h1 {
       color: #ededed;
@@ -190,9 +190,9 @@ html {
       justify-self: center; } }
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
-  .main_content {
+  .main-content {
     padding-top: 5rem; }
-    .main_content .main_heading h1 {
+    .main-content .main_heading h1 {
       font-size: 4rem; }
   .gallery {
     margin: 5rem 0; }
@@ -211,9 +211,9 @@ html {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 90%;
-    margin: auto; }
-  .fixedPosition {
+    margin: auto;
+    width: 90%; }
+  .fixed-position {
     position: fixed; }
   #logo {
     display: none; }
@@ -221,7 +221,7 @@ html {
     display: block;
     height: 40px;
     width: 100%;
-    background-image: url("/img/code.svg");
+    background-image: url("img/code.svg");
     background-repeat: no-repeat;
     background-position: 90%;
     cursor: pointer; }
@@ -254,17 +254,17 @@ html {
   .nav_links ul.open {
     height: 100%;
     position: absolute; }
-  .main_content {
+  .main-content {
     margin: auto; }
-    .main_content h1 {
+    .main-content h1 {
       padding: 4.5rem 0;
       font-size: 3rem;
       text-align: left;
       width: 80%;
       text-transform: uppercase; }
-    .main_content .sub_heading {
+    .main-content .sub_heading {
       font-weight: 100; }
-    .main_content #sub_paragraph {
+    .main-content #sub_paragraph {
       text-transform: uppercase;
       font-size: 14px;
       margin: 2em 0;
@@ -350,23 +350,23 @@ html {
     font-family: "Oswald", sans-serif; }
     #logo:hover {
       border: none; }
-  .main_content .header_content {
+  .main-content .header_content {
     display: flex;
     flex-flow: row;
     justify-content: space-between; }
-  .main_content h1 {
+  .main-content h1 {
     font-size: 5rem;
     padding: 7rem 0;
     text-transform: uppercase; }
-  .main_content .main_heading {
+  .main-content .main_heading {
     width: 40%;
     justify-self: flex-start; }
-  .main_content .right {
+  .main-content .right {
     width: 50%;
     justify-self: flex-end; }
-  .main_content #taglist {
+  .main-content #taglist {
     margin: 2rem 0; }
-    .main_content #taglist li {
+    .main-content #taglist li {
       margin: 0; }
   .img-wrapper {
     padding: 4.5rem 0;
