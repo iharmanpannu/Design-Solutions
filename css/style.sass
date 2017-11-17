@@ -6,16 +6,20 @@
 
 *
   box-sizing: border-box
+  font-family: $font-stack-opensans
   margin: 0
   padding: 0
-  font-family: $font-stack-opensans
-body,html
-  width: 100vw
+
+body,
+html
+  color: $c-grey-color
   margin: 0
   overflow-x: hidden
-  color: $c-grey-color
+  width: 100vw
+
   h1
     font-family: $font-stack-oswald
+
   h3
     font-family: $font-stack-oswald
     color: $c-orange-red
@@ -41,19 +45,22 @@ body,html
     flex-wrap: wrap
     margin: 4.5rem 0
     text-align: left
+
     li
-      margin: 0 .5em
       font-size: 1.25rem
-  #taglist li::after
-    content: ','
-    color: $c-orange-red
-  #taglist li:last-child::before
-    content: ' and '
-    color: $c-orange-red
-    font-family: serif
-    font-size: 2rem
-    border-bottom: 1px solid $c-orange-red
-    line-height: 2.375rem
+      margin: 0 .5em
+
+      &::after
+        color: $c-orange-red
+        content: ','
+             
+      &:last-child::before
+        border-bottom: 1px solid $c-orange-red
+        color: $c-orange-red
+        content: 'and '
+        font-family: serif
+        font-size: 2rem
+        line-height: 2.375rem
 
   .d
     a
@@ -65,6 +72,7 @@ body,html
 
   .services
     margin-bottom: 5rem
+
   li
     padding: 5px 0
     a
@@ -402,7 +410,10 @@ body,html
     grid-area: c
   .d
     grid-area: d
-
+  
+  // Video Image 
+  .video-img
+    
 
   // Mid Content
   .midsection
