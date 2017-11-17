@@ -1,6 +1,6 @@
 @import "variables"
-@fa-font-path:   "/font"
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400')
+@import url("font-awesome/scss/font-awesome.scss")
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400")
 // font-family: 'Open Sans', sans-serif
 // font-family: 'Oswald', sans-serif
 
@@ -53,7 +53,7 @@ html
       &::after
         color: $c-orange-red
         content: ','
-             
+
       &:last-child::before
         border-bottom: 1px solid $c-orange-red
         color: $c-orange-red
@@ -70,28 +70,28 @@ html
     img
       max-width: 100%
 
-  .services
-    margin-bottom: 5rem
+  .midsection,
+  .header-content
+    h3
+      color: $c-grey-color
+      margin-bottom: 2rem
 
-  li
-    padding: 5px 0
+    p
+      color: $c-light-grey
+      font-size: 1rem
+      text-transform: uppercase
+
+    h4
+      font-family: $font-stack-oswald
+      text-transform: uppercase
+      font-size: 1rem
+
+    li
+      padding: 5px 0
 
     a
       border-bottom: 1px solid $c-orange-red
       font-size: 2rem
-
-    h4
-      font-size: 1rem
-
-    .left
-      border-top: 1px solid $c-orange-red
-      padding: 2rem 1rem
-      width: 100vw
-
-    .right
-      border-top: 1px solid $c-orange-red
-      padding: 2rem 1rem
-      width: 100vw
 
   .articles
 
@@ -107,30 +107,61 @@ html
     h4
       font-family: $font-stack-oswald
       text-transform: uppercase
+      font-size: 1rem
+
+    li
+      padding: 5px 0
+
+    a
+      border-bottom: 1px solid $c-orange-red
+      font-size: 2rem
+
+    .left
+      border-top: 1px solid $c-orange-red
+      padding: 2rem 1rem
+      width: 100vw
+
+    .right
+      border-top: 1px solid $c-orange-red
+      padding: 2rem 1rem
+      width: 100vw
 
     .first-article,
     .second-article
       animation: hoverOut .5s linear 0s
+      &:hover
+        animation: hover .5s ease-in forwards
+        transform: translateX(1px)
+      @keyframes hover
+        0%
+          transform: translateX(0)
 
-    &:hover
-      animation: hover .5s ease-in forwards
-      transform: translateX(1px)
+        100%
+          transform: translateX(5px)
+      @keyframes hoverOut
+        0%
+          transform: translateX(5px)
 
-    @keyframes hover
-      0%
-        transform: translateX(0)
-
-      100%
-        transform: translateX(5px)
-    @keyframes hoverOut
-      0%
-        transform: translateX(5px)
-
-      100%
-        transform: translateX(0)
+        100%
+          transform: translateX(0)
   //     Footer Styles
 
   footer
+    h1
+      color: $c-light-white
+      font-family: $font-stack-oswald
+      text-transform: uppercase
+      border-bottom: 1px solid $c-light-white
+
+    a
+     color: $c-light-white
+     font-size: 1em
+     text-transform: uppercase
+     border: none
+     &:hover
+       color: $c-white-hover
+       border-bottom: 1px solid $c-white-hover
+
     .social
       align-items: center
       animation: footerOut .5s linear 0s
@@ -145,36 +176,23 @@ html
         animation: footerHover .5s linear 0s both
       @keyframes footerHover
         from
-          border-left: 0 solid $c-light-grey
-          border-right: 0 solid $c-light-grey
+          border-left: 0 solid $c-light-white
+          border-right: 0 solid $c-light-white
 
         to
-          border-left: 10px solid $c-light-grey
-          border-right: 10px solid $c-light-grey
+          border-left: 15px solid $c-light-white
+          border-right: 15px solid $c-light-white
 
       @keyframes footerOut
         from
-          border-left: 10px solid $c-light-grey
-          border-right: 10px solid $c-light-grey
+          border-left: 15px solid $c-light-white
+          border-right: 15px solid $c-light-white
 
         to
-          border-left: 0 solid $c-light-grey
-          border-right: 0 solid $c-light-grey
+          border-left: 0 solid $c-light-white
+          border-right: 0 solid $c-light-white
 
-      h1
-        color: $c-light-white
-        font-family: $font-stack-oswald
-        text-transform: uppercase
-        border-bottom: 1px solid $c-light-white
 
-      a
-       color: $c-light-white
-       font-size: 1em
-       text-transform: uppercase
-       border: none
-       &:hover
-         color: $c-white-hover
-         border-bottom: 1px solid $c-white-hover
     // For mobile only
 
 @media screen and (max-width: 420px)
@@ -199,7 +217,7 @@ html
 
   .main-content
     padding-top: 5rem
-    .main_heading
+    .main-heading
       h1
         font-size: 4rem
   .gallery
@@ -234,7 +252,8 @@ html
     display: block
     height: 40px
     width: 100%
-    background-image: url("img/code.svg")
+    background-color: $c-orange-light
+    background-image: url(/img/burgernav.svg)
     background-repeat: no-repeat
     background-position: 90%
     cursor: pointer
@@ -282,7 +301,7 @@ html
     .sub_heading
       font-weight: 100
 
-    #sub_paragraph
+    .sub-paragraph
       text-transform: uppercase
       font-size: 14px
       margin: 2em 0
@@ -331,7 +350,7 @@ html
   hr
     display: none
   // heading styles
-  .hero_header
+  .hero-header
     .nav-links
       position: fixed
       overflow: hidden
@@ -380,7 +399,7 @@ html
   // Content after header_content
 
   .main-content
-    .header_content
+    .header-content
       display: flex
       flex-flow: row
       justify-content: space-between
@@ -389,7 +408,7 @@ html
       font-size: 5rem
       padding: 7rem 0
       text-transform: uppercase
-    .main_heading
+    .main-heading
       width: 40%
       justify-self: flex-start
     .right
@@ -423,10 +442,10 @@ html
     grid-area: c
   .d
     grid-area: d
-  
-  // Video Image 
+
+  // Video Image
   .video-img
-    
+
 
   // Mid Content
   .midsection
@@ -464,5 +483,6 @@ html
       font-size: 3rem
     .right
       border-left: 1px solid $c-orange-red
-    .first-article,.second-article
+    .first-article,
+    .second-article
       margin: 4rem
