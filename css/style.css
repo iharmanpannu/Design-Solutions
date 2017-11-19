@@ -252,7 +252,10 @@ html {
     background-repeat: no-repeat;
     background-position: 100%;
     cursor: pointer;
-    margin-left: 10px; }
+    margin-left: 10px;
+    font-size: .7em;
+    font-family: "Oswald", sans-serif;
+    color: #2e3c40; }
   .nav-links {
     width: 100%;
     overflow: hidden; }
