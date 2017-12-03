@@ -9,7 +9,6 @@
   font-family: $font-stack-opensans
   margin: 0
   padding: 0
-
 body,
 html
   color: $c-grey-color
@@ -238,6 +237,7 @@ html
 // Tablet and mobile
 
 @media screen and (max-width: 768px)
+
   .container
     margin: auto
     width: 90%
@@ -348,11 +348,15 @@ html
 
 
 @media screen and (min-width: 769px)
+  .all-wraped
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 2em
   .burger-nav
     display: none
-  .container
-    width: 80%
-    margin: auto
+  // .container
+  //   width: 80%
+  //   margin: auto
   hr
     display: none
   // heading styles
@@ -472,8 +476,8 @@ html
     margin: 5rem auto
 
     .partners_imgs
-      width: 70vw
-      margin: auto
+      // width: 70vw
+      // margin: auto
       display: grid
       grid-gap: 1px
       grid-template-columns: repeat(auto-fill, minmax(186px, 1fr))

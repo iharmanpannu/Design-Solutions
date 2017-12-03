@@ -336,11 +336,12 @@ html {
     margin: 3rem 0; } }
 
 @media screen and (min-width: 769px) {
+  .all-wraped {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em; }
   .burger-nav {
     display: none; }
-  .container {
-    width: 80%;
-    margin: auto; }
   hr {
     display: none; }
   .hero-header .nav-links {
@@ -439,8 +440,6 @@ html {
   .gallery {
     margin: 5rem auto; }
     .gallery .partners_imgs {
-      width: 70vw;
-      margin: auto;
       display: grid;
       grid-gap: 1px;
       grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
