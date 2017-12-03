@@ -238,9 +238,6 @@ html
 
 @media screen and (max-width: 768px)
 
-  .nav-items
-    display: none
-
   .container
     margin: auto
     width: 90%
@@ -251,48 +248,7 @@ html
   #logo
     display: none
 
-  // HamBurger Nav
-  #hamburger
-  width: 30px
-  height: 40px
-  position: relative
-  transform: rotate(0deg)
-  transition: .5s ease-in-out
-  cursor: pointer
 
-#hamburger
-  span
-    display: block
-    position: absolute
-    height: 5px
-    width: 10%
-    background: black
-    border-radius: 9px
-    opacity: 1
-    left: 0
-    transform: rotate(0deg)
-    transition: .25s ease-in-out
-
-#hamburger
-  span
-    &:nth-child(1)
-      top: 0px
-    &:nth-child(2)
-      top: 12px
-    &:nth-child(3)
-      top: 24px
-  &.open span
-    &:nth-child(1)
-      top: 18px
-      transform: rotate(135deg)
-    &:nth-child(2)
-      opacity: 0
-      left: -60px
-    &:nth-child(3)
-      top: 18px
-      transform: rotate(-135deg)
-
-  // HamBurger Nav ends
 
   .nav-links
     width: 100%
@@ -380,8 +336,6 @@ html
 
 
 @media screen and (min-width: 769px)
-  #hamburger
-    display: none
   .all-wraped
     max-width: 1200px
     margin: 0 auto
