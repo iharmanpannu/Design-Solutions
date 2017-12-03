@@ -5,17 +5,22 @@ html
     title Design Solutions
     meta(name='viewport', content='width=device-width, initial-scale=1')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    link(rel='stylesheet', type='text/css', href='css/style.css')
     link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+
 
   body
     header.hero-header
       .nav-container
         nav.nav-links
-          a(id="logo" href="#")
-            i.fa.fa-code(aria-hidden='true')  Design
-          a.burger-nav MENU
           ul
+            li
+              a#logo Design
+            li#hamburger
+              span
+              span
+              span
+          ul.nav-items
             li
               a(href='index.html') Our Work
             li
