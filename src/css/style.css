@@ -72,6 +72,42 @@ html a:hover {
   width: 100%;
 }
 
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.mobile-header a,
+.mobile-header #logo {
+  font-size: 1.6em;
+}
+.mobile-nav {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  text-align: center;
+  padding: 2em 0;
+  background: #f0818f;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+}
+.mobile-nav #close-tog {
+  margin-left: auto;
+  margin-right: 2em;
+}
+.mobile-nav li {
+  margin: 2em 0;
+}
+.mobile-nav a,
+.mobile-nav #logo {
+  color: #fff;
+  font-size: 2em;
+  margin: 3em 0;
+}
+
 /* Navigation Styles here  */
 
 /* Header Styles here  */
@@ -328,43 +364,6 @@ html footer .social:hover {
 /* Media query styles here  */
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
-  .mobile-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em 1em;
-  }
-  .mobile-header #logo {
-    color: #f0818f;
-  }
-  .mobile-header a {
-    font-size: 1.5em;
-  }
-  .mobile-nav {
-    display: flex;
-    /* display: none; */
-    flex-direction: column;
-    text-align: center;
-    padding: 2em 0;
-    background: #f0818f;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 10000;
-  }
-  .mobile-nav #close-tog {
-    margin-left: auto;
-    margin-right: 2em;
-  }
-  .mobile-nav li {
-    margin: 2em 0;
-  }
-  .mobile-nav a,
-  #logo {
-    color: #fff;
-    font-size: 2em;
-    margin: 3em 0;
-  }
-
   .main-content {
     padding-top: 5rem;
   }
@@ -497,29 +496,11 @@ html footer .social:hover {
     font-size: 0.8rem;
     text-transform: uppercase;
     transition: all 400ms ease-in-out;
-    /* animation: navHoverIn 500ms ease-in-out; */
     margin: 0 1em;
   }
   .hero-header .nav-links li a:hover {
     color: #40d6bc;
-    /* animation: navHoverOut 500ms ease-in-out; */
   }
-  /* @keyframes navHoverOut {
-    0% {
-      border-bottom: 0px solid #40d6bc;
-    }
-    100% {
-      border-bottom: 1px solid #40d6bc;
-    }
-  }
-  @keyframes navHoverIn {
-    0% {
-      border-bottom: 1px solid #40d6bc;
-    }
-    100% {
-      border-bottom: 0px solid #40d6bc;
-    }
-  } */
 
   .main-content .header-content {
     display: flex;
