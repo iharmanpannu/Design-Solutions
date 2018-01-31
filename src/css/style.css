@@ -496,13 +496,13 @@ html footer .social:hover {
     border: none;
     font-size: 0.8rem;
     text-transform: uppercase;
-    animation: navHoverIn 0.2s linear both;
+    animation: navHoverIn 0.2s ease-in-out both;
     margin: 0 1em;
   }
   .hero-header .nav-links li a:hover {
     border-bottom: 1px solid #40d6bc;
     color: #40d6bc;
-    animation: navHoverOut 0.2s linear both;
+    animation: navHoverOut 0.2s ease-in-out both;
   }
   @keyframes navHoverOut {
     0% {
