@@ -24,7 +24,7 @@ html h1 {
 body h3,
 html h3 {
   font-family: "Rammetto One", cursive;
-  color: #ff5c5c;
+  color: #f16d7e;
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 4.5rem;
@@ -44,7 +44,7 @@ body a,
 html a {
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  color: #ff5c5c;
+  color: #f16d7e;
 }
 body a:hover,
 html a:hover {
@@ -65,13 +65,13 @@ html #taglist li {
 }
 body #taglist li::after,
 html #taglist li::after {
-  color: #ff5c5c;
+  color: #f16d7e;
   content: " , ";
 }
 body #taglist li:last-child::before,
 html #taglist li:last-child::before {
-  border-bottom: 1px solid #ff5c5c;
-  color: #ff5c5c;
+  border-bottom: 1px solid #f16d7e;
+  color: #f16d7e;
   content: "and ";
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
@@ -79,7 +79,7 @@ html #taglist li:last-child::before {
 }
 body .d a,
 html .d a {
-  border-bottom: 1px solid #ff5c5c;
+  border-bottom: 1px solid #f16d7e;
 }
 body .video-img,
 html .video-img {
@@ -122,7 +122,7 @@ body .midsection a,
 body .header-content a,
 html .midsection a,
 html .header-content a {
-  border-bottom: 1px solid #ff5c5c;
+  border-bottom: 1px solid #f16d7e;
   font-size: 2rem;
 }
 body .articles h3,
@@ -148,18 +148,18 @@ html .articles li {
 }
 body .articles a,
 html .articles a {
-  border-bottom: 1px solid #ff5c5c;
+  border-bottom: 1px solid #f16d7e;
   font-size: 2rem;
 }
 body .articles .left,
 html .articles .left {
-  border-top: 1px solid #ff5c5c;
+  border-top: 1px solid #f16d7e;
   padding: 2rem 1rem;
   width: 100vw;
 }
 body .articles .right,
 html .articles .right {
-  border-top: 1px solid #ff5c5c;
+  border-top: 1px solid #f16d7e;
   padding: 2rem 1rem;
   width: 100vw;
 }
@@ -217,7 +217,7 @@ body footer .social,
 html footer .social {
   align-items: center;
   animation: footerOut 0.5s linear 0s;
-  background: #ff5c5c;
+  background: #f16d7e;
   display: flex;
   flex-flow: column;
   flex-wrap: wrap;
@@ -316,7 +316,7 @@ html footer .social:hover {
     overflow: hidden;
     position: fixed;
     width: 100vw;
-    background: #ff5c5c;
+    background: #f16d7e;
     height: 0;
     flex-direction: column;
   }
@@ -403,7 +403,7 @@ html footer .social:hover {
   hr {
     width: 10vw;
     height: 2px;
-    background-color: #ff5c5c;
+    background-color: #f16d7e;
     border: none;
     margin: 3rem 0;
   }
@@ -480,7 +480,7 @@ html footer .social:hover {
     justify-content: space-between;
   }
   .main-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 7rem 0;
     text-transform: uppercase;
   }
@@ -515,7 +515,7 @@ html footer .social:hover {
   }
   .img-wrapper .d a {
     font-size: 2rem;
-    border-bottom: 1px solid #ff5c5c;
+    border-bottom: 1px solid #f16d7e;
   }
   .a {
     grid-area: a;
@@ -565,7 +565,7 @@ html footer .social:hover {
     font-size: 3rem;
   }
   .articles .right {
-    border-left: 1px solid #ff5c5c;
+    border-left: 1px solid #f16d7e;
   }
   .articles .first-article,
   .articles .second-article {
