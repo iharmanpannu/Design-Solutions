@@ -276,7 +276,7 @@ html footer .social {
 
 body footer .social:hover,
 html footer .social:hover {
-  animation: footerHover 0.5s linear 0s both;
+  animation: footerHover 0.5s linear 0s;
 }
 
 @keyframes footerHover {
@@ -496,30 +496,30 @@ html footer .social:hover {
     border: none;
     font-size: 0.8rem;
     text-transform: uppercase;
-    animation: navHoverIn 0.2s linear both;
+    transition: all 400ms ease-in-out;
+    /* animation: navHoverIn 500ms ease-in-out; */
     margin: 0 1em;
   }
   .hero-header .nav-links li a:hover {
-    border-bottom: 1px solid #40d6bc;
     color: #40d6bc;
-    animation: navHoverOut 0.2s linear both;
+    /* animation: navHoverOut 500ms ease-in-out; */
   }
-  @keyframes navHoverOut {
+  /* @keyframes navHoverOut {
     0% {
       border-bottom: 0px solid #40d6bc;
     }
     100% {
-      border-bottom: 2px solid #40d6bc;
+      border-bottom: 1px solid #40d6bc;
     }
   }
   @keyframes navHoverIn {
     0% {
-      border-bottom: 2px solid #40d6bc;
+      border-bottom: 1px solid #40d6bc;
     }
     100% {
       border-bottom: 0px solid #40d6bc;
     }
-  }
+  } */
 
   .main-content .header-content {
     display: flex;
