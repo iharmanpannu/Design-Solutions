@@ -82,15 +82,16 @@ html a:hover {
 .mobile-header #logo {
   font-size: 1.6em;
 }
+
 .mobile-nav {
   display: flex;
-  /* display: none; */
   flex-direction: column;
   text-align: center;
-  padding: 2em 0;
+  padding: 1em 0;
   background: #f0818f;
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
   position: fixed;
   z-index: 10000;
 }
@@ -162,7 +163,7 @@ body .header-content h3,
 html .midsection h3,
 html .header-content h3 {
   color: #2e3c40;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 body .midsection p,
 body .header-content p,
@@ -590,7 +591,7 @@ html footer .social:hover {
     justify-self: center;
   }
   .articles h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .articles .right {
     border-left: 1px solid #f0818f;
