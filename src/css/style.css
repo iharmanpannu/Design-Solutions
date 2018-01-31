@@ -201,22 +201,31 @@ html .articles .second-article:hover {
 }
 body footer h1,
 html footer h1 {
-  color: #ededed;
+  color: #fff;
   font-family: "Rammetto One", cursive;
   text-transform: uppercase;
-  border-bottom: 1px solid #ededed;
+  font-size: 1.6em;
 }
+body footer ul,
+html footer ul {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+body footer li,
+html footer li {
+  margin: 20px;
+}
+
 body footer a,
 html footer a {
-  color: #ededed;
-  font-size: 1em;
-  text-transform: uppercase;
-  border: none;
+  color: #fff;
+  font-size: 1.8em;
+  transition: all 400ms ease-in-out;
 }
 body footer a:hover,
 html footer a:hover {
-  color: rgba(237, 237, 237, 0.45);
-  border-bottom: 1px solid rgba(237, 237, 237, 0.45);
+  color: #333233;
 }
 body footer .social,
 html footer .social {
@@ -225,10 +234,10 @@ html footer .social {
   background: #f16d7e;
   display: flex;
   flex-flow: column;
-  flex-wrap: wrap;
   height: 300px;
   justify-content: center;
 }
+
 body footer .social:hover,
 html footer .social:hover {
   animation: footerHover 0.5s linear 0s both;
@@ -342,13 +351,13 @@ html footer .social:hover {
     display: block;
     margin: 0;
   } */
-  .nav-links ul li a:hover {
+  /* .nav-links ul li a:hover {
     color: #40d6bc;
-  }
-  .nav-links ul.open {
+  } */
+  /* .nav-links ul.open {
     height: 100%;
     position: absolute;
-  }
+  } */
   .main-content {
     margin: auto;
   }
@@ -449,24 +458,24 @@ html footer .social:hover {
     animation: navHoverIn 0.2s linear both;
   }
   .hero-header .nav-links ul li a:hover {
-    border-bottom: 1px solid rgba(88, 88, 88, 0.5);
-    color: rgba(88, 88, 88, 0.5);
+    border-bottom: 1px solid #40d6bc;
+    color: #40d6bc;
     animation: navHoverOut 0.2s linear both;
   }
   @keyframes navHoverOut {
     0% {
-      border-bottom: 0px solid rgba(88, 88, 88, 0.5);
+      border-bottom: 0px solid #40d6bc;
     }
     100% {
-      border-bottom: 2px solid rgba(88, 88, 88, 0.5);
+      border-bottom: 2px solid #40d6bc;
     }
   }
   @keyframes navHoverIn {
     0% {
-      border-bottom: 2px solid rgba(88, 88, 88, 0.5);
+      border-bottom: 2px solid #40d6bc;
     }
     100% {
-      border-bottom: 0px solid rgba(88, 88, 88, 0.5);
+      border-bottom: 0px solid #40d6bc;
     }
   }
   #logo {
@@ -475,9 +484,11 @@ html footer .social:hover {
     margin-left: 10px;
     text-transform: uppercase;
     font-family: "Rammetto One", cursive;
+    animation: none;
   }
   #logo:hover {
     border: none;
+    /* animation: none; */
   }
   .main-content .header-content {
     display: flex;
