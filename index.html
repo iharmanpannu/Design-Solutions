@@ -5,26 +5,24 @@
   <meta charset="utf-8">
   <title>Design Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
 </head>
 
 <body>
-  <header class="hero-header">
-    <div class="nav-container">
-      <nav class="nav-links">
-        <ul>
-          <li>
-            <a id="logo">Design</a>
+  <div class="all-wraped">
+    <header class="hero-header">
+
+      <nav>
+        <ul class="mobile-nav">
+          <li id=close-tog>
+            <a>
+              <i class="fas fa-times"></i>
+            </a>
           </li>
-          <li id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </li>
-        </ul>
-        <ul class="nav-items">
           <li>
-            <a href="index.html">Our Work</a>
+            <a href="/">Our Work</a>
           </li>
           <li>
             <a href="#">Services</a>
@@ -33,19 +31,41 @@
             <a href="#">Our Story</a>
           </li>
           <li>
-            <a href="#">The Team</a>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="mobile-header">
+          <li>
+            <a id="logo">Design</a>
           </li>
           <li>
-            <a href="#">Digest</a>
+            <a id="open-tog">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a id="logo">Design</a>
+          </li>
+          <li>
+            <a href="/">Our Work</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Our Story</a>
           </li>
           <li>
             <a href="#">Contact Us</a>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <div class="all-wraped">
+    </header>
+
     <section class="main-content">
       <header class="container">
         <h1>Solutions By Design</h1>
@@ -59,7 +79,7 @@
             <p class="sub-paragraph">Helping our partners move forward through</p>
             <ul id="taglist">
               <li>
-                <a href="#">Discovery and Strategy</a>
+                <a href="#">Discovery & Strategy</a>
               </li>
               <li>
                 <a href="#">Branding</a>
@@ -202,27 +222,40 @@
   </div>
   <footer>
     <div class="social">
-      <div class="left">
+      <div>
         <h1>Social</h1>
       </div>
-      <div class="right">
-        <ul>
-          <li>
-            <a href="https://dribbble.com/iharmanpannu"></a>
-          </li>
-          <li>
-            <a href="https://github.com/iharmanpannu"></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/iharpannu"></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/iharmanpannu"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/iharmanpannu/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/iharmanpannu">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/iharmanpannu/">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/iharmanpannu">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://harmanpannu.com/">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+
   </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="src/js/main.js"></script>
 </body>
 
