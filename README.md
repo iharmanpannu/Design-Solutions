@@ -1,7 +1,7 @@
 # Design Agency
 <br>
 
-Annother side project Build using HTML5, CSS, and jQuery.
+Another side project Build using HTML5, CSS, and jQuery.
 [Live Preview](https://designagency.surge.sh)
 
 <br>
